@@ -1,3 +1,11 @@
+'''
+@File: main.py
+@Author: leon.li(l2m2lq@gmail.com)
+@Date: 2018-09-12 23:25:23
+@Last Modified By: leon.li(l2m2lq@gmail.com>)
+@Last Modified Time: 2018-09-12 23:50:14
+'''
+
 
 class Solution:
   def reverse(self, x):
