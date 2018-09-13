@@ -6,8 +6,6 @@
 @Last Modified Time: 2018-09-12 23:20:19
 '''
 
-
-
 # Definition for singly-linked list.
 class ListNode:
     def __init__(self, x):
