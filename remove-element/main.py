@@ -1,4 +1,10 @@
-
+'''
+@File: main.py
+@Author: leon.li(l2m2lq@gmail.com)
+@Date: 2018-09-14 17:49:41
+@Last Modified By: leon.li(l2m2lq@gmail.com>)
+@Last Modified Time: 2018-09-14 18:22:35
+'''
 
 class Solution:
   def removeElement(self, nums, val):
