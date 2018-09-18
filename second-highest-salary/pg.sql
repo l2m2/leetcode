@@ -7,6 +7,8 @@
  */
 
 SELECT lag("Salary") OVER (ORDER BY "Salary" ) AS "SecondHighestSalary"
-FROM "Employee"
+FROM (
+SELECT "Salary" FROM "Employee" GROUP BY "Salary"
+) A
 ORDER BY "Salary" DESC
 LIMIT 1

@@ -22,3 +22,10 @@ SELECT Top 1 Salary AS SecondHighestSalary FROM (
 ) A 
 WHERE A.Num = 2
 ORDER BY Salary DESC
+
+-- 解法3
+SELECT TOP 1 lag("Salary") OVER (ORDER BY "Salary" ) AS "SecondHighestSalary"
+FROM (
+SELECT "Salary" FROM "Employee" GROUP BY "Salary"
+) A
+ORDER BY "Salary" DESC
