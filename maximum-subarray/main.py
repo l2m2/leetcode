@@ -1,3 +1,11 @@
+'''
+@File: main.py
+@Author: leon.li(l2m2lq@gmail.com)
+@Date: 2018-10-02 14:17:25
+@Last Modified By: leon.li(l2m2lq@gmail.com>)
+@Last Modified Time: 2018-10-03 20:26:29
+'''
+
 class Solution:
   def maxSubArray(self, nums):
     """
@@ -25,7 +33,7 @@ class Solution:
         if i < len(nums) - 1:
           sums.append(self.maxSubArray(nums[i+1:]))
     return max(sums)
-      
+
 if __name__ == "__main__":
   s = Solution()
   print(s.maxSubArray([3,-4,8,-5,15]) == 18)
