@@ -1,3 +1,10 @@
+'''
+@File: main3.py
+@Author: leon.li(l2m2lq@gmail.com)
+@Date: 2018-10-10 23:19:01
+@Last Modified By: leon.li(l2m2lq@gmail.com>)
+@Last Modified Time: 2018-10-11 00:02:27
+'''
 
 '''
 分治算法实现
