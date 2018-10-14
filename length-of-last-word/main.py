@@ -1,3 +1,11 @@
+'''
+@File: main.py
+@Author: leon.li(l2m2lq@gmail.com)
+@Date: 2018-10-14 11:22:54
+@Last Modified By: leon.li(l2m2lq@gmail.com>)
+@Last Modified Time: 2018-10-14 11:34:17
+'''
+
 class Solution:
   def lengthOfLastWord(self, s):
     """
