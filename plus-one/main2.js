@@ -1,7 +1,7 @@
 /*
- * @File: main.js
+ * @File: main2.js
  * @Author: leon.li(l2m2lq@gmail.com)
- * @Date: 2019-06-05 16:23:41
+ * @Date: 2019-06-05 23:51:59
  */
 
 /**
@@ -10,13 +10,15 @@
  */
 var plusOne = function(digits) {
   var carry = 1;
-  var result = digits.reduceRight((acc, curr) => {
-    acc.unshift((curr + carry) % 10);
+  var curr;
+  for (var i = digits.length - 1; i >= 0; i--) {
+    curr = digits[i];
+    digits[i] = (curr + carry) % 10;
     carry = (curr + carry) >= 10 ? 1 : 0;
-    return acc;
-  }, []);
-  if (carry > 0) result.unshift(1);
-  return result;
+    if (carry === 0) break;
+  }
+  if (carry === 1) digits.unshift(1);
+  return digits;
 };
 
 console.log(plusOne([1, 2, 3]));
