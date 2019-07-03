@@ -20,7 +20,7 @@ Output: 99
  * @return {number}
  */
 var singleNumber = function(nums) {
-  return +nums.sort().join('_').replace(/(\-?\d+_){2,}/, '');
+  return +((nums.sort().join('_')+'_').replace(/(\-?\d+_)\1{2}/g, '').replace('_', ''));
 };
 
 console.log(singleNumber([2,2,3,2]));
